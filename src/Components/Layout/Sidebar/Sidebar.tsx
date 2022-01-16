@@ -16,10 +16,20 @@ const Sidebar = (props: Props) => {
 				<h2>BIGID</h2>
 			</div>
 			<nav className={styles.drawer__nav}>
-				<NavLink to="/" onClick={() => props.onClose(false)} end className={({ isActive }) => `${styles.drawer__nav__navLink} ${isActive && styles.drawer__nav__navLink__active}`}>
+				<NavLink
+					to="/"
+					onClick={() => props.onClose(false)}
+					end
+					className={({ isActive }) => `${styles.drawer__nav__navLink} ${isActive && styles.drawer__nav__navLink__active}`}
+				>
 					<Button variant="text">Overview</Button>
 				</NavLink>
-				<NavLink to="/add-user" onClick={() => props.onClose(false)} end className={({ isActive }) => `${styles.drawer__nav__navLink} ${isActive && styles.drawer__nav__navLink__active}`}>
+				<NavLink
+					to="/add-user"
+					onClick={() => props.onClose(false)}
+					end
+					className={({ isActive }) => `${styles.drawer__nav__navLink} ${isActive && styles.drawer__nav__navLink__active}`}
+				>
 					<Button variant="text">Add user</Button>
 				</NavLink>
 			</nav>

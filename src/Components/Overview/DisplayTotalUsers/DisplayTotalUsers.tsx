@@ -14,4 +14,4 @@ const DisplayTotalUsers = (props: Props) => {
     )
 }
 
-export default DisplayTotalUsers
+export default DisplayTotalUsers;

@@ -12,18 +12,18 @@ const Main = () => {
     const { loading } = useContext(AppContext);
     return (
 		<>
-				<Backdrop classes={{ root: styles.backdrop }} open={loading}>
-					<CircularProgress color="secondary" thickness={6.5} size={50} />
-				</Backdrop>
-				<div>
-					<Header />
-					<main className={styles.main}>
-						<Routes>
-							<Route path="/" element={<Overview />} />
-							<Route path="/add-user" element={<AddUser />} />
-						</Routes>
-					</main>
-				</div>
+			<Backdrop classes={{ root: styles.backdrop }} open={loading}>
+				<CircularProgress color="secondary" thickness={6.5} size={50} />
+			</Backdrop>
+			<div>
+				<Header />
+				<main className={styles.main}>
+					<Routes>
+						<Route path="/" element={<Overview />} />
+						<Route path="/add-user" element={<AddUser />} />
+					</Routes>
+				</main>
+			</div>
 		</>
 	);
 }

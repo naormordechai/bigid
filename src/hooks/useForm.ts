@@ -9,7 +9,7 @@ export const useForm = <F>(
 	const [formData, setFormData] = useState<F>(initialState);
 
 	const handleInputChange = (event: any | null, name?: string, value?: any) => {
-		setFormData({ ...formData, [event?.target?.name || (name || '')]: !isNil(event?.target?.value) ? event?.currentTarget.value : value });
+		setFormData({ ...formData, [event?.target?.name || name || '']: !isNil(event?.target?.value) ? event?.currentTarget.value : value });
 	};
 
 	const handleSubmit = (e: React.SyntheticEvent) => {

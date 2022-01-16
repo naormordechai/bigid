@@ -1,15 +1,17 @@
 .box {
-    padding: 32px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 500px;
-    h2 { margin-bottom: 18px; }
-    span { 
-        font-size: 28px; 
-        font-weight: bold;
-        color: purple;
-    }
+	padding: 32px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 500px;
+	h2 {
+		margin-bottom: 18px;
+	}
+	span {
+		font-size: 28px;
+		font-weight: bold;
+		color: purple;
+	}
 }

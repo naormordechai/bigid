@@ -17,21 +17,23 @@
 			text-decoration: none;
 			margin-bottom: 24px;
 			button {
-                font-weight: bold;
+				font-weight: bold;
 				width: 100%;
 				display: flex;
 				justify-content: flex-start;
 				color: #000;
 				border-radius: 0;
-                padding-top: 12px;
-                padding-bottom: 12px;
-                font-weight: 700;
+				padding-top: 12px;
+				padding-bottom: 12px;
+				font-weight: 700;
 			}
 			&__active {
 				button {
 					background-color: rgb(240, 194, 226);
-                    color: #fff;
-                    &:hover { background-color: rgb(240, 194, 226); }
+					color: #fff;
+					&:hover {
+						background-color: rgb(240, 194, 226);
+					}
 				}
 			}
 		}
